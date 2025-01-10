@@ -16,10 +16,10 @@
         .container {
             width: 90%;
             max-width: 800px;
-            height: auto;
             padding: 10px;
             margin: 0 auto;
             position: relative;
+            text-align: center;
         }
 
         .balloon {
@@ -33,12 +33,15 @@
         }
 
         .balloon > div {
-            width: 104px;
-            height: 140px;
+            width: 100px;
+            height: 130px;
             background: rgba(182, 15, 97, 0.9);
             border-radius: 80%;
             margin: 10px 0;
             position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             padding: 10px;
             box-shadow: inset 17px 7px 10px rgba(182, 15, 97, 0.9);
             animation: float 6s ease-in-out infinite;
@@ -84,12 +87,9 @@
         }
 
         span {
-            font-size: 4.8em;
+            font-size: 4em;
             color: white;
             position: relative;
-            top: 30px;
-            left: 50%;
-            margin-left: -27px;
         }
 
         @keyframes float {
@@ -103,10 +103,10 @@
 
         h1 {
             position: relative;
-            top: 20px;
             text-align: center;
             color: white;
-            font-size: 3.5em;
+            font-size: 3em;
+            margin-top: 20px;
             transition: color 0.5s ease-in-out;
         }
 
@@ -115,7 +115,6 @@
         }
 
         .quote {
-            text-align: center;
             font-size: 2em;
             color: white;
             margin-top: 20px;
@@ -141,42 +140,42 @@
 
         /* Media Queries for Responsiveness */
         @media (max-width: 768px) {
-            h1 {
-                font-size: 2.5em;
-            }
-
             .balloon > div {
                 width: 80px;
-                height: 120px;
+                height: 100px;
             }
 
             span {
                 font-size: 3.5em;
             }
 
+            h1 {
+                font-size: 2.5em;
+            }
+
             .quote {
-                font-size: 1.5em;
-                margin-top: 150px;
+                font-size: 1.6em;
+                margin-top: 20px;
             }
         }
 
         @media (max-width: 480px) {
-            h1 {
-                font-size: 2em;
-            }
-
             .balloon > div {
                 width: 60px;
-                height: 100px;
+                height: 80px;
             }
 
             span {
                 font-size: 3em;
             }
 
+            h1 {
+                font-size: 2.2em;
+            }
+
             .quote {
-                font-size: 1.2em;
-                margin-top: 100px;
+                font-size: 1.4em;
+                margin-top: 20px;
             }
         }
     </style>
